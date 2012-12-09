@@ -1,0 +1,13 @@
+version=4.0.0.groovy
+startTime=1355008851923
+out-path=/data/work/code/projects-ng/com.onyem.jtracer.samples.db/target/out
+selector=+com.onyem.jtracer.samples.**,+org.apache.commons.dbcp.**,+org.apache.commons.pool.**,+java.sql.**,-java.sql.DriverManager,+org.h2.jdbc.JdbcConnection,+org.h2.jdbc.JdbcStatement
+trigger=com.onyem.jtracer.samples.db.ConnectionManager{getNormalConnection, getPooledConnection, closeConnection}
+event-file=25::event1.out
+event-file=27::event2.out
+event-file=25::event3.out
+event-file=27::event4.out
+event-file=26::event5.out
+event-file=27::event6.out
+event-file=26::event7.out
+event-file=27::event8.out
